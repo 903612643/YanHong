@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YH_RentHouseViewController">
+            <connections>
+                <outlet property="tableView" destination="S6q-ZS-DIK" id="mZ6-Mu-Siv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="S6q-ZS-DIK">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="VK2-ok-qfA"/>
+                        <outlet property="delegate" destination="-1" id="x6M-vb-Sjf"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="S6q-ZS-DIK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DiZ-a8-dep"/>
+                <constraint firstAttribute="bottom" secondItem="S6q-ZS-DIK" secondAttribute="bottom" id="WVz-GY-A8p"/>
+                <constraint firstAttribute="trailing" secondItem="S6q-ZS-DIK" secondAttribute="trailing" id="j3g-mZ-o4f"/>
+                <constraint firstItem="S6q-ZS-DIK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vnC-LN-z2a"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="S6q-ZS-DIK"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="DiZ-a8-dep"/>
+                    <exclude reference="WVz-GY-A8p"/>
+                    <exclude reference="j3g-mZ-o4f"/>
+                    <exclude reference="vnC-LN-z2a"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="S6q-ZS-DIK"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="DiZ-a8-dep"/>
+                    <include reference="WVz-GY-A8p"/>
+                    <include reference="j3g-mZ-o4f"/>
+                    <include reference="vnC-LN-z2a"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="419.5" y="376.5"/>
+        </view>
+    </objects>
+</document>

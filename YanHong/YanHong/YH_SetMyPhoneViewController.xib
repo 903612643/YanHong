@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YH_SetMyPhoneViewController">
+            <connections>
+                <outlet property="tableView" destination="ZWL-75-Xhp" id="FQf-zh-ZC6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZWL-75-Xhp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Prx-rf-Tcu"/>
+                        <outlet property="delegate" destination="-1" id="pG7-Xk-4e1"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZWL-75-Xhp" secondAttribute="bottom" id="2Sq-W9-dRs"/>
+                <constraint firstAttribute="trailing" secondItem="ZWL-75-Xhp" secondAttribute="trailing" id="LDc-fU-JQ5"/>
+                <constraint firstItem="ZWL-75-Xhp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sLx-YY-bDd"/>
+                <constraint firstItem="ZWL-75-Xhp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yrc-2z-Wxd"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="2Sq-W9-dRs"/>
+                    <exclude reference="LDc-fU-JQ5"/>
+                    <exclude reference="sLx-YY-bDd"/>
+                    <exclude reference="yrc-2z-Wxd"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="2Sq-W9-dRs"/>
+                    <include reference="LDc-fU-JQ5"/>
+                    <include reference="sLx-YY-bDd"/>
+                    <include reference="yrc-2z-Wxd"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="220.5" y="390.5"/>
+        </view>
+    </objects>
+</document>

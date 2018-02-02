@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YH_MyGuestViewController">
+            <connections>
+                <outlet property="searchDisplayController" destination="r5I-M9-MSy" id="xfM-An-yZ3"/>
+                <outlet property="theSearchBar" destination="7dj-7v-6bH" id="hOE-5p-Pie"/>
+                <outlet property="theSearchDisplayCtr" destination="r5I-M9-MSy" id="ydL-pz-dLa"/>
+                <outlet property="theTableView" destination="ixV-4n-pwc" id="CjF-EK-fzK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" text="" placeholder="共0位联系人" backgroundImage="secBgm.png" translatesAutoresizingMaskIntoConstraints="NO" id="7dj-7v-6bH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="BpL-3M-Nu0"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ixV-4n-pwc">
+                    <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="DfH-kE-EL5"/>
+                        <outlet property="delegate" destination="-1" id="SDM-PR-2Ts"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7dj-7v-6bH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="26S-Gz-Axa"/>
+                <constraint firstAttribute="trailing" secondItem="ixV-4n-pwc" secondAttribute="trailing" id="C80-7t-WQ1"/>
+                <constraint firstItem="7dj-7v-6bH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ehk-Rz-6l3"/>
+                <constraint firstItem="ixV-4n-pwc" firstAttribute="top" secondItem="7dj-7v-6bH" secondAttribute="bottom" id="ORt-p0-PBQ"/>
+                <constraint firstItem="ixV-4n-pwc" firstAttribute="leading" secondItem="7dj-7v-6bH" secondAttribute="leading" id="XCC-tP-iHS"/>
+                <constraint firstItem="7dj-7v-6bH" firstAttribute="trailing" secondItem="ixV-4n-pwc" secondAttribute="trailing" id="jD0-Qg-x5E"/>
+                <constraint firstAttribute="bottom" secondItem="ixV-4n-pwc" secondAttribute="bottom" id="oug-w8-lcH"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="26S-Gz-Axa"/>
+                    <exclude reference="Ehk-Rz-6l3"/>
+                    <exclude reference="jD0-Qg-x5E"/>
+                    <exclude reference="C80-7t-WQ1"/>
+                    <exclude reference="ORt-p0-PBQ"/>
+                    <exclude reference="XCC-tP-iHS"/>
+                    <exclude reference="oug-w8-lcH"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="26S-Gz-Axa"/>
+                    <include reference="Ehk-Rz-6l3"/>
+                    <include reference="jD0-Qg-x5E"/>
+                    <include reference="C80-7t-WQ1"/>
+                    <include reference="ORt-p0-PBQ"/>
+                    <include reference="XCC-tP-iHS"/>
+                    <include reference="oug-w8-lcH"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="401.5" y="139.5"/>
+        </view>
+        <searchDisplayController id="r5I-M9-MSy">
+            <connections>
+                <outlet property="delegate" destination="-1" id="VFz-YS-FBQ"/>
+                <outlet property="searchBar" destination="7dj-7v-6bH" id="wRU-wc-msX"/>
+                <outlet property="searchContentsController" destination="-1" id="xxg-ce-GgT"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="epX-Dw-co0"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="7RK-o4-SjA"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+    <resources>
+        <image name="secBgm.png" width="99" height="33"/>
+    </resources>
+</document>

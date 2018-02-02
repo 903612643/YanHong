@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YH_FriendInfoViewController">
+            <connections>
+                <outlet property="tableViiew" destination="Pxl-sE-THH" id="Tfe-h2-iyd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pxl-sE-THH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="MIJ-fV-oQv"/>
+                        <outlet property="delegate" destination="-1" id="D2f-fB-BZb"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Pxl-sE-THH" secondAttribute="bottom" id="1ff-e4-2eE"/>
+                <constraint firstItem="Pxl-sE-THH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="A8a-1X-VxD"/>
+                <constraint firstAttribute="trailing" secondItem="Pxl-sE-THH" secondAttribute="trailing" id="JCu-Zm-L2e"/>
+                <constraint firstItem="Pxl-sE-THH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LiJ-bm-eyZ"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1ff-e4-2eE"/>
+                    <exclude reference="A8a-1X-VxD"/>
+                    <exclude reference="JCu-Zm-L2e"/>
+                    <exclude reference="LiJ-bm-eyZ"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="1ff-e4-2eE"/>
+                    <include reference="A8a-1X-VxD"/>
+                    <include reference="JCu-Zm-L2e"/>
+                    <include reference="LiJ-bm-eyZ"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="293.5" y="418.5"/>
+        </view>
+    </objects>
+</document>
